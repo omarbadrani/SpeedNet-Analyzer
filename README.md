@@ -1,191 +1,236 @@
-NetSpeed Analyzer
-https://screenshot.png
+NetSpeed Analyzer ⚡
+https://img.shields.io/badge/Python-3.7%252B-blue
+https://img.shields.io/badge/PySide6-6.4%252B-green
+https://img.shields.io/badge/License-MIT-yellow
+https://img.shields.io/badge/Platform-Windows%2520%257C%2520Linux%2520%257C%2520macOS-lightgrey
 
-📋 Description
-NetSpeed Analyzer est une application GUI complète et intuitive pour tester votre vitesse internet. Développée avec PySide6 (Qt for Python), elle utilise la bibliothèque speedtest-cli pour effectuer des mesures précises de débit et latence.
+Une application GUI moderne et intuitive pour tester et analyser votre vitesse internet avec des graphiques détaillés et un historique complet.
 
 ✨ Fonctionnalités
-🚀 Test de Vitesse
-Test Download/Upload : Mesure précise en Mbps
+🚀 Test de Vitesse Complet
+📥 Download : Mesure précise de la vitesse de téléchargement
 
-Ping/Latence : Mesure du temps de réponse
+📤 Upload : Test de la vitesse d'envoi
 
-Serveurs personnalisables : Choix parmi des centaines de serveurs mondiaux
+⏱️ Ping/Latence : Mesure du temps de réponse du serveur
 
-Sélection automatique : Trouve le meilleur serveur disponible
+🌍 Serveurs Mondiaux : Accès à des centaines de serveurs dans le monde entier
 
-📊 Visualisation
-Graphiques temps-réel : Historique des tests
+📊 Visualisation Avancée
+Graphiques en Temps Réel : Historique visuel des performances
 
-3 graphiques séparés : Download, Upload et Ping
+3 Graphiques Séparés : Download, Upload et Ping indépendants
 
-Statistiques détaillées : Moyennes, maximums et minimums
+Statistiques Détaillées : Moyennes, maximums, minimums et tendances
+
+Évaluation Automatique : Classification de la qualité de connexion
+
+🔧 Interface Moderne
+Design Qt6 : Interface fluide et professionnelle
+
+Multi-onglets : Test et informations système
+
+Emojis et Icônes : Interface visuelle et intuitive
+
+Configuration Flexible : Timeout réglable et sélection de serveur
 
 📁 Gestion des Données
-Historique local : Sauvegarde automatique des résultats
+💾 Sauvegarde Automatique : Historique conservé entre les sessions
 
-Export CSV : Exportation des données pour analyse
+📤 Export CSV : Données exportables pour analyse externe
 
-Interface intuitive : Design moderne et responsive
+🗑️ Nettoyage : Possibilité d'effacer l'historique
 
-🔧 Configuration
-Sélection du serveur : Liste complète des serveurs Speedtest
+📊 Comparaison : Suivi des performances sur le temps
 
-Timeout réglable : De 5 à 30 secondes
-
-Informations système : Détails sur l'environnement d'exécution
-
+🖼️ Aperçu
+text
+┌─────────────────────────────────────────────────────┐
+│               ⚡ NetSpeed Analyzer                   │
+├─────────────────────────────────────────────────────┤
+│ 📡 Serveur: Auto (Meilleur serveur)                 │
+│ ⏱️ Timeout: 10 secondes                             │
+├─────────────────────────────────────────────────────┤
+│ 🚀 Lancer le Test   🔄 Rafraîchir   📊 Historique    │
+├─────────────────────────────────────────────────────┤
+│ [███████████████████████░░░░░░] 85%                 │
+│ Test d'upload en cours...                          │
+├─────────────────────────────────────────────────────┤
+│ ✅ Test Terminé - Excellent                         │
+│ 📥 Download: 245.67 Mbps                            │
+│ 📤 Upload: 125.34 Mbps                              │
+│ ⏱️ Ping: 12 ms                                      │
+└─────────────────────────────────────────────────────┘
 🛠️ Installation
 Prérequis
 Python 3.7 ou supérieur
 
-Pip (gestionnaire de packages Python)
+Connexion internet fonctionnelle
 
-Installation des dépendances
+Installation Rapide
 bash
-# Cloner le dépôt
+# 1. Cloner le dépôt
 git clone https://github.com/votre-username/netspeed-analyzer.git
 cd netspeed-analyzer
 
-# Installer les dépendances
+# 2. Créer un environnement virtuel (recommandé)
+python -m venv venv
+
+# 3. Activer l'environnement
+# Sur Windows :
+venv\Scripts\activate
+# Sur Linux/Mac :
+source venv/bin/activate
+
+# 4. Installer les dépendances
 pip install -r requirements.txt
-Dépendances principales
-PySide6 >= 6.4.0 (Interface graphique)
+Dépendances
+PySide6 >= 6.4.0 - Interface graphique Qt6
 
-speedtest-cli >= 2.1.3 (Tests de vitesse)
+speedtest-cli >= 2.1.3 - Tests de vitesse internet
 
-matplotlib >= 3.5.0 (Graphiques)
-
-platform (Inclue dans Python)
+matplotlib >= 3.5.0 - Création de graphiques
 
 🚀 Utilisation
 Lancement de l'application
 bash
 python main.py
-Interface utilisateur
-Onglet "Test de Vitesse" :
+Guide d'utilisation étape par étape
+Configuration du test
 
-Sélectionnez un serveur ou laissez "Auto"
+Sélectionnez un serveur spécifique ou laissez "Auto"
 
-Configurez le timeout si nécessaire
+Ajustez le timeout si nécessaire (10 secondes recommandé)
+
+Cliquez sur "🔄 Rafraîchir" pour mettre à jour la liste des serveurs
+
+Lancement du test
 
 Cliquez sur "🚀 Lancer le Test"
 
-Visualisez les résultats en temps réel
+Suivez la progression dans la barre et les messages
 
-Onglet "Système" :
+Vous pouvez arrêter à tout moment avec "⏹️ Arrêter"
 
-Informations sur le système et l'application
+Analyse des résultats
 
-Détails sur les bibliothèques utilisées
+Consultez les vitesses Download/Upload et le ping
 
-Boutons disponibles
-🚀 Lancer le Test : Démarre un nouveau test
+Observez les graphiques d'évolution
 
-⏹️ Arrêter : Interrompt le test en cours
+Vérifiez les statistiques moyennes
 
-🔄 Rafraîchir : Met à jour la liste des serveurs
+Gestion des données
 
-📊 Historique : Affiche l'historique des tests
+"📊 Historique" : Affiche les 10 derniers tests
 
-💾 Exporter : Exporte les résultats en CSV
+"💾 Exporter" : Sauvegarde en fichier CSV
 
-🗑️ Effacer : Supprime l'historique
+"🗑️ Effacer" : Supprime l'historique des tests
 
-📁 Structure du projet
+📁 Structure des Fichiers
 text
 netspeed-analyzer/
 │
-├── main.py              # Application principale
-├── requirements.txt     # Dépendances Python
-├── README.md           # Ce fichier
-├── LICENSE             # Licence MIT
-├── history.json        # Fichier d'historique (généré)
-├── icon.png            # Icône de l'application (optionnel)
-└── screenshots/        # Captures d'écran
-📈 Résultats et export
-Format des données
-Les résultats sont sauvegardés dans history.json (format JSON) et peuvent être exportés en CSV avec les colonnes suivantes :
-
-Numéro de test
-
-Date et heure
-
-Download (Mbps)
-
-Upload (Mbps)
-
-Ping (ms)
-
-Serveur
-
-Pays
-
-Distance (km)
-
-Visualisation
-L'application génère automatiquement des graphiques montrant l'évolution des performances au fil du temps.
-
+├── main.py                    # Application principale
+├── requirements.txt           # Dépendances Python
+├── README.md                  # Ce fichier
+├── LICENSE                    # Licence MIT
+│
+├── history.json               # Historique des tests (auto-généré)
+├── speedtest_results_*.csv    # Exports CSV (auto-généré)
+│
+└── assets/                    # Ressources (optionnel)
+    ├── icon.png              # Icône de l'application
+    └── screenshots/          # Captures d'écran
+📊 Format des Données
+Sauvegarde Automatique (JSON)
+json
+{
+  "count": 1,
+  "timestamp": "2024-01-15 14:30:45",
+  "download": 245.67,
+  "upload": 125.34,
+  "ping": 12.5,
+  "server": "Provider (Paris, France)",
+  "server_info": {
+    "sponsor": "Provider",
+    "name": "Paris",
+    "country": "France",
+    "d": 25.3,
+    "latency": 12.5
+  }
+}
+Export CSV
+text
+Numéro;Date;Download (Mbps);Upload (Mbps);Ping (ms);Serveur;Pays;Distance (km)
+1;2024-01-15 14:30:45;245.67;125.34;12.5;Provider (Paris);France;25.3
 🔧 Développement
-Architecture
-Design Pattern MVC : Séparation claire des responsabilités
+Architecture Technique
+Interface : PySide6 (Qt6) avec QThread pour les opérations asynchrones
 
-Threads QThread : Tests en arrière-plan sans bloquer l'interface
+Tests Réseau : Speedtest-cli avec gestion d'erreurs robuste
 
-Signaux/Slots : Communication entre composants
+Visualisation : Matplotlib avec mise à jour en temps réel
 
-Extensions possibles
-Ajout de tests de stabilité de connexion
+Persistance : JSON pour l'historique local
 
-Intégration avec des services cloud
+Extensions Possibles
+python
+# Idées pour améliorer l'application :
 
-Notifications système
+# 1. Tests de stabilité
+- Test de ping continu sur 1 minute
+- Mesure de la gigue (jitter)
+- Tests à intervalles réguliers
 
-Mode sombre/clair
+# 2. Fonctionnalités réseau
+- Test de plusieurs serveurs simultanément
+- Mesure de la perte de paquets
+- Analyse de la route (traceroute)
 
+# 3. Intégrations
+- Export vers Google Sheets/Excel
+- Notifications système
+- Partage des résultats
+🐛 Dépannage
+Problèmes Courants et Solutions
+Problème	Solution
+"Module speedtest non trouvé"	pip install speedtest-cli
+Interface ne se lance pas	Vérifiez PySide6 : pip install PySide6
+Pas de serveurs disponibles	Vérifiez la connexion internet et firewall
+Graphiques non affichés	pip install matplotlib
+Test trop lent	Augmentez le timeout ou changez de serveur
+Mode Débogage
+bash
+# Pour voir les messages détaillés
+python -c "import speedtest; print('Speedtest version:', speedtest.__version__)"
+📈 Évaluation de la Qualité
+L'application classe automatiquement votre connexion :
+
+Catégorie	Download	Upload	Ping
+Excellent	> 100 Mbps	> 50 Mbps	< 20 ms
+Bon	50-100 Mbps	20-50 Mbps	20-50 ms
+Moyen	10-50 Mbps	5-20 Mbps	50-100 ms
+Faible	< 10 Mbps	< 5 Mbps	> 100 ms
 🤝 Contribution
-Les contributions sont les bienvenues ! Pour contribuer :
+Les contributions sont les bienvenues ! Voici comment contribuer :
 
 Fork le projet
 
-Créez une branche (git checkout -b feature/AmazingFeature)
+Créez une branche (git checkout -b feature/ma-fonctionnalite)
 
-Committez vos changements (git commit -m 'Add some AmazingFeature')
+Commitez vos changements (git commit -am 'Ajout de ma fonctionnalité')
 
-Push vers la branche (git push origin feature/AmazingFeature)
+Push vers la branche (git push origin feature/ma-fonctionnalite)
 
 Ouvrez une Pull Request
 
-Standards de code
-Respecter PEP 8 pour Python
+Bonnes Pratiques
+Suivez les conventions PEP 8
 
-Ajouter des docstrings aux fonctions
+Ajoutez des tests pour les nouvelles fonctionnalités
 
-Tester les nouvelles fonctionnalités
+Documentez votre code
 
-Mettre à jour la documentation
-
-🐛 Dépannage
-Problèmes courants
-"ModuleNotFoundError: No module named 'speedtest'"
-
-bash
-pip install speedtest-cli
-L'interface ne se lance pas
-
-bash
-pip install PySide6 matplotlib
-Pas de serveurs trouvés
-
-Vérifiez votre connexion internet
-
-Essayez d'augmenter le timeout
-
-Rafraîchissez la liste des serveurs
-
-Débogage
-Pour activer les logs de débogage :
-
-python
-import logging
-logging.basicConfig(level=logging.DEBUG)
+Mettez à jour le README si nécessaire
