@@ -257,8 +257,8 @@ copies or substantial portions of the Software.
 
 **Omar Badrani**
 - Développeur passionné par les applications réseaux et interfaces graphiques
-- Contact : votre-email@example.com
-- GitHub : [@votre-username](https://github.com/votre-username)
+- Contact : omarbadrani770@gmail.com
+- GitHub : https://github.com/omarbadrani
 
 ## 🙏 Remerciements
 
@@ -278,7 +278,7 @@ Si vous rencontrez des problèmes ou avez des questions :
    - Captures d'écran si possible
    - Configuration système
 
-3. **Contact direct** : votre-email@example.com
+3. **Contact direct** : omarbadrani770@gmail.com
 
 ---
 
